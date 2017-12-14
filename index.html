@@ -1,17 +1,29 @@
-## A propos
+---
+layout: default
+---
 
-[Doctoubib.com](https://www.doctoubib.com) a été lancé en 2016 pour le grand public exclusivement en Tunisie ayant pour mission d’améliorer et faciliter l’accès aux soins. Nos services offerts pour l’instant sont les suivants :
+<div class="home">
 
-Prise de rendez-vous en ligne pour les patients : 
-Doctoubib met à votre disposition un service gratuit permettant aux patients de trouver le médecin ou le dentiste disponible le plus proche et correspondant le mieux à leurs besoins ainsi que leurs horaires de consultations disponibles en temps réel et de réserver instantanément, en ligne, un rendez-vous de consultation au cabinet du docteur.
+  <h1 class="page-heading">Posts</h1>
 
-Un outil de gestion de cabinet pour les docteurs : 
-Doctoubib offre aux médecins un outil de gestion de cabinet qui est un agenda partagé en ligne, interactif, performant et modulable.
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span>
 
-Cela permettra aux professionnels de partager leurs planning et aux clients ou patients de fixer eux-mêmes leurs rendez-vous en ligne 24h/24. Mais aussi un service de rappel de rendez-vous SMS pour diminuer les risques d’absence des patients aux rendez-vous.
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        {% if post.pitch %}
+        <h3>
+          {{ post.pitch }}
+        </h3>
+        {% endif %}
+        <a class="post-continue-reading" href="{{ post.url | prepend: site.baseurl }}">{% if post.in_one_word %}{{ post.in_one_word }}{% else %}{{ site.continue_reading }}{% endif %}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-### TEAM
+  <p class="rss-subscribe">s'abonner <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-
-### Support or Contact
-[contact support](https://www.doctoubib.com/help).
+</div>

@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Weekly lessons
+title: Tech Blog
 contact_us: Un article à proposer? Une question à poser? Ou juste envie de parler? Écrivez-nous!
 email: contact@doctoubib.com
 description: > # this means to ignore newlines until "baseurl:"

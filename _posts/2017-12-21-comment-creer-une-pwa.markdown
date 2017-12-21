@@ -1,7 +1,7 @@
 ---
 layout: post
 url: "/common/2016/04/12/comment-creer-unr-pwa.html"
-title:  "Gestion des valeurs par défaut"
+title:  "Comment créer une PWA"
 author: "Moetaz Torkhani"
 date:   2016-04-12 14:33:00 +0100
 pitch:  "L'objectif de cet article est de voir comment créer une progressive web app (PWA)"
